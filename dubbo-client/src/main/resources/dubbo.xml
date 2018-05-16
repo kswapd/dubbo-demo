@@ -28,6 +28,7 @@
                       interface="interfaces.BarService"
                       protocol="dubbo" />
 
+
     <bean id="brave" class="com.github.kristofa.brave.dubbo.BraveFactoryBean">
 
         <property name="serviceName">

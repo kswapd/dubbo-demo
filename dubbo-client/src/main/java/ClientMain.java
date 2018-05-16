@@ -12,8 +12,8 @@ public class ClientMain {
 				new String[] { "applicationConsumer.xml" });
 		context.start();
 
-		//DemoService service = (DemoService) context.getBean("demoService");
-		//System.out.println(service.sayHello("world............"));
+		DemoService service = (DemoService) context.getBean("demoService");
+		System.out.println(service.sayHello("world............"));
 
 
 		FooService foo = (FooService) context.getBean("fooService");
