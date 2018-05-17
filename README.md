@@ -32,21 +32,26 @@
 ### 3. Run dubbo provider and consumer.
     3.1 Run `mvn clean install` to compile all modules.
     3.2 Run dubbo-provider-bar module:
+
     ```
         cd dubbo-provider-bar/target
         java -jar dubbo-provider-bar-1.0-SNAPSHOT.jar
     ```
 
     3.3 Run dubbo-provider module, this module also use dubbo-provider-bar as provider:
+
         ```
             cd dubbo-provider/target
             java -jar dubbo-provider-1.0-SNAPSHOT.jar
         ```
+
     3.4 Run dubbo-provider module:
+
         ```
             cd dubbo-consumer/target
             java -jar dubbo-consumer-1.0-SNAPSHOT.jar
         ```
+
 ## How to use
 
 After installation steps,  the distributed tracing data has been sent to zipkin server, open url `http://{zipkin-server-address}:9411`,
