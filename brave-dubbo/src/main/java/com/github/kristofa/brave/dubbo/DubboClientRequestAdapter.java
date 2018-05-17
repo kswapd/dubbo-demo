@@ -32,7 +32,7 @@ public class DubboClientRequestAdapter implements ClientRequestAdapter {
     public String getSpanName() {
 
         String name = spanNameProvider.resolveSpanName(RpcContext.getContext());
-        System.out.println("span name-----" + name);
+        //System.out.println("span name-----" + name);
         return name;
 
     }

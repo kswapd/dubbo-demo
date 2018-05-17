@@ -13,7 +13,7 @@ public class ClientMain {
 		context.start();
 
 		DemoService service = (DemoService) context.getBean("demoService");
-		System.out.println(service.sayHello("world............"));
+		System.out.println(service.sayHello("hello"));
 
 
 		FooService foo = (FooService) context.getBean("fooService");
