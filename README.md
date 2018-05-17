@@ -20,37 +20,37 @@
 
 ### 1. zookeeper service for dubbo
   We use docker-compose files  to install zookeeper in docker environment, [Download docker-compose file here](https://gitee.com/kswapd/docker-devops.git),run
-  ```
+  `
     docker-compose up -d
-  ```
+  `
 ### 2. zipkin & elasticsearch & spark service
   We use docker-compose files  to install all above services in docker environment, [Download docker-compose file here](https://gitee.com/kswapd/docker-devops.git),run
-    ```
+    `
       docker-compose -f docker-zipkin/docker-compose.yml -f docker-zipkin/docker-compose-elasticsearch.yml up -d
-    ```
+    `
 
 ### 3. Run dubbo provider and consumer.
     3.1 Run `mvn clean install` to compile all modules.
     3.2 Run dubbo-provider-bar module:
 
-    ```
+    `
         cd dubbo-provider-bar/target
         java -jar dubbo-provider-bar-1.0-SNAPSHOT.jar
-    ```
+    `
 
     3.3 Run dubbo-provider module, this module also use dubbo-provider-bar as provider:
 
-        ```
+        `
             cd dubbo-provider/target
             java -jar dubbo-provider-1.0-SNAPSHOT.jar
-        ```
+        `
 
     3.4 Run dubbo-provider module:
 
-        ```
+        `
             cd dubbo-consumer/target
             java -jar dubbo-consumer-1.0-SNAPSHOT.jar
-        ```
+        `
 
 ## How to use
 
