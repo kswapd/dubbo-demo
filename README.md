@@ -1,37 +1,82 @@
 # dubbo-arch
+-------------------
 
-#### 项目介绍
-dubbo architecture adding  distributed tracing system
+## Introduction
+ `dubbo` architecture adding  distributed tracing system
 
-#### 软件架构
-软件架构说明
+## Software architecture
 
-
-#### 安装教程
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+### 1. zipkin
+   Use `zipkin` as restful server to receive restful sampling datea from client agent.
+### 2. brave
+   Use brave-core as client agent to sample rpc(netty) or restfule(jetty) data to zipkin server.
+### 3. elasticsearch
+   Use elasticsearch as backend storage of zipkin.
+### 4. spark
+   Use spark to analyze data of elasticsearch.
 
 
-#### 码云特技
+## Install
 
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [http://git.mydoc.io/](http://git.mydoc.io/)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+### 1. zookeeper service for dubbo
+  We use docker-compose files  to install zookeeper in docker environment, [Download docker-compose file here](https://gitee.com/kswapd/docker-devops.git),run
+  ```
+    docker-compose up -d
+  ```
+### 2. zipkin & elasticsearch & spark service
+  We use docker-compose files  to install all above services in docker environment, [Download docker-compose file here](https://gitee.com/kswapd/docker-devops.git),run
+    ```
+      docker-compose -f docker-zipkin/docker-compose.yml -f docker-zipkin/docker-compose-elasticsearch.yml up -d
+    ```
+
+### 3. Run dubbo provider and consumer.
+    3.1 Run `mvn clean install` to compile all modules.
+    3.2 Run dubbo-provider-bar module:
+    ```
+        cd dubbo-provider-bar/target
+        java -jar dubbo-provider-bar-1.0-SNAPSHOT.jar
+    ```
+
+    3.3 Run dubbo-provider module, this module also use dubbo-provider-bar as provider:
+        ```
+            cd dubbo-provider/target
+            java -jar dubbo-provider-1.0-SNAPSHOT.jar
+        ```
+    3.4 Run dubbo-provider module:
+        ```
+            cd dubbo-consumer/target
+            java -jar dubbo-consumer-1.0-SNAPSHOT.jar
+        ```
+## How to use
+
+After installation steps,  the distributed tracing data has been sent to zipkin server, open url `http://{zipkin-server-address}:9411`,
+you will get dubbo rpc monitor data.
+
+
+## Development Instructions
+**MUST** follow the instructions of **NOTE** section.
+* Please install `JDK 1.8` before build the project.
+* **MUST NOT** add any domain logics to this project.
+* **MUST NOT** push any jar files, use maven dependency instead.
+* **MUST NOT** push any unnecessary binary files.
+* **MUST** push source code with meaningful message `git commit -m "meaningful message"`.
+* **MUST** import `codequality/codestyle-formatter.xml`, and **format source code** (CTRL+SHIFT+F) and **organize imports** (CTRL+SHIFT+O) before commit.
+* **MUST** use standard `JavaDoc Tags` on all java source code.
+* **SHOULD** use `English` in JavaDoc, comments and any source code related resources **as possible**.
+* **SHOULD** follow [Java Coding Conventions](http://www.oracle.com/technetwork/java/codeconventions-150003.pdf) and [Java Style Guide](https://google.github.io/styleguide/javaguide.html) if you haven't to improve code quality.
+
+
+## Contributor
+
+### 1. Fork by kongxw@dcits.com
+### 2. Pull Request
+
+
+
+## Problems
+ 1. If meet dependency problem, run `mvn clean install`
+
+
+## Other resource
+
+* [Spring Cloud learning](https://blog.csdn.net/u012702547/article/details/78717512 "learning")
