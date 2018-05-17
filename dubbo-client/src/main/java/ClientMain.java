@@ -20,8 +20,8 @@ public class ClientMain {
 		System.out.println(foo.sayFoo("world "));
 
 
-		//BarService bar = (BarService) context.getBean("barService");
-		//System.out.println(bar.sayBar("world "));
+		BarService bar = (BarService) context.getBean("barService");
+		System.out.println(bar.sayBar("world "));
 
 
 		System.out.println("dddd");

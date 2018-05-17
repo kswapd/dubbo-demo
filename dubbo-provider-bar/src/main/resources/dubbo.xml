@@ -11,9 +11,9 @@
     <dubbo:application name="helloworld-provider-bar" />
     <!-- 声明服务注册中心 -->
     <!-- 使用zookeeper作为注册中心 -->
-    <dubbo:registry protocol="zookeeper" address="10.88.2.108:2181" />
+    <dubbo:registry protocol="zookeeper" address="${zookeeper.address}:${zookeeper.port}" />
     <!-- 指定传输层通信协议 -->
-    <dubbo:protocol name="dubbo" host="10.88.2.104" port="20990" />
+    <dubbo:protocol name="dubbo" host="${host.address}" port="${provider-bar.port}" />
 
 
 
@@ -36,17 +36,6 @@
 
 
 
-    <bean id="brave" class="com.github.kristofa.brave.dubbo.BraveFactoryBean">
 
-        <property name="serviceName">
-            <value>helloworld-provider-bar</value>
-        </property>
-        <property name="zipkinHost">
-            <value>http://10.88.2.108:9411/</value>
-        </property>
-        <property name="rate">
-            <value>1.0</value>
-        </property>
-    </bean>
 
 </beans>
