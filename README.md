@@ -7,48 +7,49 @@
 ## Software architecture
 
 ### 1. zipkin
-        Use `zipkin` as restful server to receive restful sampling datea from client agent.
+  Use `zipkin` as restful server to receive restful sampling datea from client agent.
 ### 2. brave
-        Use brave-core as client agent to sample rpc(netty) or restfule(jetty) data to zipkin server.
+  Use brave-core as client agent to sample rpc(netty) or restful(jetty) data to zipkin server.
 ### 3. elasticsearch
-       Use elasticsearch as backend storage of zipkin.
+  Use elasticsearch as backend storage of zipkin.
 ### 4. spark
-       Use spark to analyze data of elasticsearch.
+  Use spark to analyze data of elasticsearch.
 
 
 ## Install
 
 ### 1. zookeeper service for dubbo
-  We use docker-compose files  to install zookeeper in docker environment, [Download docker-compose file here](https://gitee.com/kswapd/docker-devops.git),run
-  `
+  We use docker-compose files  to install zookeeper in docker environment, [Download docker-compose file here](https://gitee.com/kswapd/docker-devops.git),run:
+  ```
     docker-compose up -d
-  `
+  ```
 ### 2. zipkin & elasticsearch & spark service
 
   We use docker-compose files  to install all above services in docker environment, [Download docker-compose file here](https://gitee.com/kswapd/docker-devops.git),run
-    `
-      docker-compose -f docker-zipkin/docker-compose.yml -f docker-zipkin/docker-compose-elasticsearch.yml up -d
-    `
+
+  ```
+  docker-compose -f docker-zipkin/docker-compose.yml -f docker-zipkin/docker-compose-elasticsearch.yml up -d
+  ```
 
 ### 3. Run dubbo provider and consumer
 
 
-  *  Run `mvn clean install` to compile all modules.
-  *  Run dubbo-provider-bar module:
+  * 3.1  Run `mvn clean install` to compile all modules.
+  * 3.2  Run dubbo-provider-bar module:
 
 ```
         cd dubbo-provider-bar/target
         java -jar dubbo-provider-bar-1.0-SNAPSHOT.jar
 ```
 
-  * Run dubbo-provider module, this module also use dubbo-provider-bar as provider:
+  * 3.3 Run dubbo-provider module, this module also use dubbo-provider-bar as provider:
 
 ```
          cd dubbo-provider/target
          java -jar dubbo-provider-1.0-SNAPSHOT.jar
 ```
 
-  * Run dubbo-provider module:
+  * 3.4 Run dubbo-consumer module:
 
 ```
         cd dubbo-consumer/target
