@@ -12,12 +12,12 @@ public class ClientMain {
 				new String[] { "applicationConsumer.xml" });
 		context.start();
 
-		DemoService service = (DemoService) context.getBean("demoService");
+		/*DemoService service = (DemoService) context.getBean("demoService");
 		System.out.println(service.sayHello("hello"));
 
 
 		FooService foo = (FooService) context.getBean("fooService");
-		System.out.println(foo.sayFoo("world "));
+		System.out.println(foo.sayFoo("world "));*/
 
 
 		BarService bar = (BarService) context.getBean("barService");
