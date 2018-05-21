@@ -12,6 +12,7 @@
         <module name="dubbo-provider" />
         <module name="dubbo-provider (1)" />
         <module name="dubbo-provider-bar" />
+        <module name="jetty-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -24,6 +25,7 @@
       <module name="dubbo-provider-bar" target="1.5" />
       <module name="dubbo-provider2" target="1.5" />
       <module name="dubbo-zipkin-spring-starter" target="1.7" />
+      <module name="jetty-server" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
