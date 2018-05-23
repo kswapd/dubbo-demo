@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="349c4f4c-4ac4-4bbb-8669-756c674466b3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_spancollector_http_3_9_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_java_zipkin_1_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dubbo-provider/src/main/java/services/FooServiceImpl.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commons/src/main/resources/commons.properties" afterPath="$PROJECT_DIR$/commons/src/main/resources/commons.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dubbo-client/dubbo-client.iml" afterPath="$PROJECT_DIR$/dubbo-client/dubbo-client.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dubbo-client/pom.xml" afterPath="$PROJECT_DIR$/dubbo-client/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dubbo-client/src/main/java/ClientMain.java" afterPath="$PROJECT_DIR$/dubbo-client/src/main/java/ClientMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dubbo-client/src/main/resources/applicationConsumer.xml" afterPath="$PROJECT_DIR$/dubbo-client/src/main/resources/applicationConsumer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dubbo-client/src/main/resources/dubbo.xml" afterPath="$PROJECT_DIR$/dubbo-client/src/main/resources/dubbo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dubbo-provider/dubbo-provider.iml" afterPath="$PROJECT_DIR$/dubbo-provider/dubbo-provider.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dubbo-provider/pom.xml" afterPath="$PROJECT_DIR$/dubbo-provider/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dubbo-provider/src/main/resources/applicationProvider.xml" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/resources/applicationProvider.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dubbo-provider/src/main/resources/dubbo.xml" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/resources/dubbo.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -134,8 +120,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="116">
-                <caret line="45" column="66" lean-forward="false" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+              <first_editor relative-caret-position="-546">
+                <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -1262,8 +1248,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="116">
-            <caret line="45" column="66" lean-forward="false" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+          <first_editor relative-caret-position="-546">
+            <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
             <folding />
           </first_editor>
           <second_editor />
