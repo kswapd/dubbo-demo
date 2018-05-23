@@ -24,10 +24,6 @@
                      protocol="dubbo" />
 
 
-    <dubbo:reference id="barService"
-                      interface="interfaces.BarService"
-                      protocol="dubbo" />
-
 
 
 

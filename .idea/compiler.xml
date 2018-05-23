@@ -6,13 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="brave-dubbo" />
         <module name="commons" />
         <module name="dubbo-client" />
         <module name="dubbo-provider" />
         <module name="dubbo-provider (1)" />
-        <module name="dubbo-provider-bar" />
-        <module name="jetty-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
