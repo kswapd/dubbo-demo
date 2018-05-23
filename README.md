@@ -44,7 +44,7 @@
         cd dubbo-consumer/target
         java -jar dubbo-consumer-1.0-SNAPSHOT.jar
 ```
-   After this, you will see `hello from dubbo provider hello` from console.
+   After steps above, you will see `hello from dubbo provider hello` from console.
 
 
 ## Development Instructions
