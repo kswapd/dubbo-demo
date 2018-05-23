@@ -1,3 +1,4 @@
+
 # dubbo-demo
 -------------------
 
@@ -7,7 +8,7 @@
 ## Software architecture
 
 ### 1. zookeeper
-  Use `zookeeper` as service discover server. 
+  Use `zookeeper` as a service discovery server. 
 
 
 
@@ -71,5 +72,3 @@
 
 
 ## Other resource
-
-* [Google Dapper](http://research.google.com/pubs/pub36356.html)
