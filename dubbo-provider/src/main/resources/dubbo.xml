@@ -22,17 +22,12 @@
     <bean id="demoService"
           class="services.DemoServiceImpl" />
 
-    <bean id="fooService"
-          class="services.FooServiceImpl" />
 
     <!-- 暴露服务地址,该服务的实现类是demoService的引用 -->
     <dubbo:service ref="demoService"
                    interface="interfaces.DemoService"
                    protocol="dubbo"/>
 
-    <dubbo:service ref="fooService"
-                   interface="interfaces.FooService"
-                   protocol="dubbo" />
 
 
 

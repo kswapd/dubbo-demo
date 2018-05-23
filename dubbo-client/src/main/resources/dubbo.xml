@@ -19,12 +19,6 @@
                      interface="interfaces.DemoService"
                      protocol="dubbo"/>
 
-    <dubbo:reference id="fooService"
-                     interface="interfaces.FooService"
-                     protocol="dubbo" />
-
-
-
 
 
 </beans>

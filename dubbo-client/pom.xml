@@ -71,11 +71,6 @@
         </dependency>
 
         <!-- other end -->
-      <dependency>
-            <groupId>io.zipkin.brave</groupId>
-            <artifactId>brave-dubbo</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
 
         <dependency>
             <artifactId>commons</artifactId>

@@ -9,7 +9,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class ClientMain {
 
-
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
 				new String[] { "applicationConsumer.xml" });
@@ -19,22 +18,6 @@ public class ClientMain {
 		System.out.println(service.sayHello("hello"));
 
 
-		/*FooService foo = (FooService) context.getBean("fooService");
-		System.out.println(foo.sayFoo("world "));
-
-
-		BarService bar = (BarService) context.getBean("barService");
-		System.out.println(bar.sayBar("world "));
-		*/
-
-		//Book bb = (Book) context.getBean("mybooks");
-
-
-		/* wrong
-		SuperBook bbb = new SuperBook();
-		System.out.println(bbb.bk.getAuthor());
-		System.out.println("dddd");
-		*/
 		context.close();
 	}
 }
