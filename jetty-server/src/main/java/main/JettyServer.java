@@ -17,7 +17,6 @@ import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.handler.AbstractHandler;
 import org.eclipse.jetty.server.handler.ContextHandler;
 import org.eclipse.jetty.server.handler.ContextHandlerCollection;
-import sun.jvm.hotspot.HelloWorld;
 
 public class JettyServer extends AbstractHandler
 {

@@ -2,6 +2,7 @@ import interfaces.BarService;
 import interfaces.DemoService;
 import interfaces.FooService;
 import models.Book;
+import models.StaticTest;
 import models.SuperBook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -34,6 +35,11 @@ public class ClientMain {
 
 		SuperBook bb = (SuperBook) context.getBean("superBook");
 		System.out.println("book infor from spring:"+bb.bk.getAuthor());
+
+		SuperBook.test();
+		StaticTest.stest.sprt();
+		StaticTest.stest ss = new StaticTest.stest();
+		ss.prt();
 		/* wrong
 		SuperBook bbb = new SuperBook();
 		System.out.println(bbb.bk.getAuthor());

@@ -12,4 +12,11 @@ public class SuperBook {
 	//@Autowired
 	@Resource(name="book")
 	public Book bk;
+
+
+	public static void test()
+	{
+		System.out.println("test");
+	}
+
 }
