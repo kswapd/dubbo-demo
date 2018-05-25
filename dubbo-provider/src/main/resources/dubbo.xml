@@ -13,9 +13,11 @@
     <!-- 使用zookeeper作为注册中心 -->
     <dubbo:registry protocol="zookeeper" address="${zookeeper.address}:${zookeeper.port}" />
     <!-- 指定传输层通信协议 -->
+<!--
     <dubbo:protocol name="dubbo" host="${host.address}" port="${provider.port}" />
+-->
 
-
+    <dubbo:protocol name="dubbo" port="${provider.port}" />
 
 
     <!-- 配置Bean -->

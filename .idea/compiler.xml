@@ -17,6 +17,7 @@
       <module name="commons" target="1.5" />
       <module name="dubbo-arch" target="1.5" />
       <module name="dubbo-client" target="1.5" />
+      <module name="dubbo-demo" target="1.5" />
       <module name="dubbo-provider" target="1.5" />
       <module name="dubbo-provider (1)" target="1.5" />
       <module name="dubbo-provider-bar" target="1.5" />

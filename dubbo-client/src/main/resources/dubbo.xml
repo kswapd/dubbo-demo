@@ -13,7 +13,7 @@
     <dubbo:registry protocol="zookeeper" address="${zookeeper.address}:${zookeeper.port}" />
     <!-- 引用服务,demoService仅用于根据接口生成动态代理，默认使用javassist生成代理对象 -->
 
-    <dubbo:protocol name="dubbo" host="${host.address}" />
+    <!--<dubbo:protocol name="dubbo" host="${host.address}" />-->
 
     <dubbo:reference id="demoService"
                      interface="interfaces.DemoService"
