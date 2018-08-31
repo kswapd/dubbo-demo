@@ -11,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 
 /**
- * if use this, must to mark ClientMainSpringBoot as a blank class, otherwise report duplicated demoService error
+ * If use this, must to mark ClientMainSpringBoot as a blank class, otherwise will report duplicated demoService error.
  */
 public class ClientMain {
 

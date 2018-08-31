@@ -2,11 +2,12 @@ package services;
 
 
 import interfaces.DemoService;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by kongxiangwen on 5/15/18 w:20.
  */
-
+@Service("demoService")
 public class DemoServiceImpl implements DemoService {
 
 

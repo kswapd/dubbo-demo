@@ -7,6 +7,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  * Created by kongxiangwen on 5/15/18 w:20.
  */
+/**
+ * If use this, must to mark ServerMainSpringBoot as a blank class, otherwise will report duplicated demoService error.
+ */
 public class ServerMain{
 		public static void main(String[] args) throws IOException {
 

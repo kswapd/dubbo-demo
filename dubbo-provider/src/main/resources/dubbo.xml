@@ -19,8 +19,8 @@
 
 -->
     <!-- 配置Bean -->
-    <bean id="demoService"
-          class="services.DemoServiceImpl" />
+    <!--<bean id="demoService"
+          class="services.DemoServiceImpl" />-->
 
 
     <!-- 暴露服务地址,该服务的实现类是demoService的引用 -->
