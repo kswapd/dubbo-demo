@@ -10,7 +10,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  * If use this, must to mark ServerMainSpringBoot as a blank class, otherwise will report duplicated demoService error.
  */
-public class ServerMain{
+
+public class ServerMain
+{
 		public static void main(String[] args) throws IOException {
 
 			System.setProperty("java.net.preferIPv4Stack", "true");
