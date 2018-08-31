@@ -18,6 +18,9 @@ public class ClientMain {
 		System.out.println(service.sayHello("hello"));
 
 
+		//DemoService service = (DemoService) context.getBean("demoService");
+		System.out.println(service.Test2("tttttt"));
+
 		context.close();
 	}
 }

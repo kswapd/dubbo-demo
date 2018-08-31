@@ -7,5 +7,8 @@ package interfaces;
 
 		String sayHello(String name);
 
+
+		String Test2(String name);
+
 	}
 

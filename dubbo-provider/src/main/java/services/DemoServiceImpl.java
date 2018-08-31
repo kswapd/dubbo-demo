@@ -1,5 +1,6 @@
 package services;
 
+
 import interfaces.DemoService;
 
 /**
@@ -21,6 +22,11 @@ public class DemoServiceImpl implements DemoService {
 		String barStr = bar.sayBar("bar");*/
 
 		return "hello from dubbo provider "  +  name;
+	}
+
+
+	public String Test2(String name){
+		return "test2";
 	}
 
 }
