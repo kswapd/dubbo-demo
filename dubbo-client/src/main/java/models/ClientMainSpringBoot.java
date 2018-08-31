@@ -12,7 +12,6 @@ import org.springframework.context.annotation.ImportResource;
 @SpringBootApplication
 @ImportResource({ "classpath*:applicationConsumer.xml" })
 public class ClientMainSpringBoot {
-
 	public static void main(String[] args) {
 		SpringApplication springApplication = new SpringApplication(ClientMainSpringBoot.class);
 		ApplicationContext applicationContext = springApplication.run(args);

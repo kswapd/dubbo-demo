@@ -1,3 +1,5 @@
+package models;
+
 import interfaces.BarService;
 import interfaces.DemoService;
 import interfaces.FooService;
@@ -6,6 +8,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Created by kongxiangwen on 5/15/18 w:20.
+ */
+
+/**
+ * if use this, must to mark ClientMainSpringBoot as a blank class, otherwise report duplicated demoService error
  */
 public class ClientMain {
 
